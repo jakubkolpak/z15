@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+	<html lang="pl-PL">
+	     	<head>
+ 	            <meta charset="utf-8">
+				<meta name="Author" content="Jakub Kołdysz">
+			</head>
+	<body>
+<center>
+  <p>Licznik odwiedzin: <b id="licznik">0</b></p>
+  <script>
+    var l = parseInt(localStorage.getItem('licznik') || 0) + 1;
+    localStorage.setItem('licznik', l);
+    document.getElementById('licznik').textContent = l;
+  </script>
+</center>
+
+	</body></html>
